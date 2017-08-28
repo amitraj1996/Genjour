@@ -3,6 +3,7 @@
 	include('routes.php');
 	include('header.php');
 	include('category-header.php');
+	include('config/connect.php');
 
 ?>
     <!-- Main section -->

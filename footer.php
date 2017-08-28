@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>
-    
-  </title>
-  
-</head>
-<body>
-
 
 <footer>
    <div class="container">
@@ -15,9 +5,9 @@
           <div class="col-md-3 col-xs-3">
           <h5>Company</h5>
              <ul>
-              <li><a href="../../about-us.php">About Us</a></li>
-              <li>Careers</li>
-              <li>Contact Us</li>
+              <li><a href="footer/about-us.php">About Us</a></li>
+              <li><a href="footer/careers.php">Careers</a></li>
+              <li><a href="footer/contact-us.php">Contact Us</a></li>
 
             </ul>           
           </div>
@@ -91,7 +81,7 @@
 
   </div>
 
-</div>
+</dvi>
 
 </body>
 </html>

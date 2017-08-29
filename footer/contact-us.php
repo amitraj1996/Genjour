@@ -1,3 +1,4 @@
+
 <!-- including file from other folders -->
 <?php
 include 'routes.php';
@@ -67,7 +68,7 @@ include 'header.php';
 </div>
 
 
-<!-- including footer files -->
 <?php
-include 'footer.php';
+	include('footer.php');
 ?>
+

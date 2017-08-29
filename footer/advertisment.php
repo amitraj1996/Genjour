@@ -2,6 +2,7 @@
 include ('routes.php');
 include ('header.php');
  ?>
+
 <!-- slider advertisment-->
 
 	<div class="mt-3 ml-4 mr-4">
@@ -71,6 +72,10 @@ include ('header.php');
 </div>
 </div>
 <!-- start of footer file -->
+
+
+
 <?php
 	include('footer.php');
 ?>
+

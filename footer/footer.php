@@ -1,4 +1,5 @@
 
+
 <footer>
    <div class="container">
         <div class="row">
@@ -9,7 +10,7 @@
               <li><a href="careers.php">Careers</a></li>
               <li><a href="contact-us.php">Contact Us</a></li>
 
-            </ul>           
+            </ul>
           </div>
           <div class="col-md-3 col-xs-3">
           <h5>Partner with us</h5>
@@ -18,19 +19,19 @@
               <li>Investors</li>
               <li>Sponsors</li>
 
-            </ul>           
+            </ul>
           </div>
           <div class="col-md-2 col-xs-2">
           <h5>Journal</h5>
             <ul>
               <li>Write for us</li>
-            </ul>            
+            </ul>
           </div>
                     <div class="col-md-2 col-xs-2">
           <h5>Interview</h5>
             <ul>
               <li>Get interviewed</li>
-            </ul>            
+            </ul>
           </div>
           <div class="col-md-2 col-xs-2 ">
             <h5>Follow Us</h5>
@@ -51,7 +52,7 @@
  </div>
 
 </footer>
- 
+
 
 
 <div class="footer-bottom">
@@ -70,7 +71,7 @@
 
         <div class="design">
 
-           <a href="#"><small>Privacy Policy</small> </a> 
+           <a href="#"><small>Privacy Policy</small> </a>
            <a target="_blank" href="#"><small>Terms &amp; Conditions</small></a>
 
         </div>

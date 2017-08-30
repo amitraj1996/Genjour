@@ -5,6 +5,9 @@
 	include('category-header.php');
 	include('config/connect.php');
 
+	$query = "SELECT * from journals";
+	$journals =$conn->query($query);
+
 ?>
     <!-- Main section -->
 
@@ -13,46 +16,36 @@
 
 	<div class="mt-5 row">
 		<div class="card-deck">
+
+<?php
+
+	while($row = $journals->fetch_assoc()){
+		?>
+
 		  <div class="card orange">
-		    <img class="card-img-top" src="img/svg/sample.svg" alt="Card image cap">
+		    <img class="card-img-top" src="<?php echo $row['img_url']?>" alt="Card image cap">
 		    <div class="card-body">
-		      <h4 class="card-title">Post title</h4>
-		      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		      <h4 class="card-title"> <a href="post.php?post_id=<?php echo $row['post_id']; ?>"> <?php echo $row['post_title']; ?></a></h4>
+		      <p class="card-text">
+		      	
+		      	<?php
+		      		$body = $row['post_content'];
+		      		echo substr($body, 0,80)."...";
+		      	?>
+
+		      </p>
 		    </div>
 		    <div class="card-footer">
 		      <small class="text-muted">Last updated 3 mins ago</small>
 		    </div>
-	  	  </div>  
-		  <div class=" card">
-		    <img class="card-img-top" src="img/svg/sample.svg" alt="Card image cap">
-		    <div class="card-body">
-		      <h4 class="card-title">Post title</h4>
-		      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
-		    </div>
-		  </div>
-		    <div class="card">
-		    <img class="card-img-top" src="img/svg/sample.svg" alt="Card image cap">
-		    <div class="card-body">
-		      <h4 class="card-title">Post title</h4>
-		      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
-		    </div>
-		  </div>
-		  <div class="card">
-		    <img class="card-img-top" src="img/svg/sample.svg" alt="Card image cap">
-		    <div class="card-body">
-		      <h4 class="card-title">Post title</h4>
-		      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
-		    </div>
-		  </div>
+	  	  </div>
+
+<?php
+	}
+
+?>
+
+
 		</div>
 	</div>
 

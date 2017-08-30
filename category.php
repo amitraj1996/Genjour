@@ -3,12 +3,22 @@
 	include('routes.php');
 	include('header.php');
 	include('category-header.php');
+	include('config/connect.php');
 
 ?>
 
 <div class="container">
-
-  <div class="row mt-5">
+<div class="mt-1"></div>
+	<h3 class="display-4">
+		<?php
+		if(isset($_GET['category'])){
+  			              		echo $_GET['category'];
+  			              	}
+			
+		?>
+	</h3>
+	<hr>
+  <div class="row mt-3">
 		<div class="card-columns">
 		  <div class="card">
 		    <img class="card-img-top" src="img/svg/245x260.svg" alt="Card image cap">

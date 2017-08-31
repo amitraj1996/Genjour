@@ -38,6 +38,7 @@
 </head>
 <body>
 
+<!Interview Tile>
 <div class="container">
 	<div class="mt-3">
 		
@@ -52,6 +53,7 @@
 		
 		<br>
 
+<!Intdentity radios>
 	     <h3 class="col-md-7">Indentity</h3>
 	     <div class="custom-controls-stacked">
   <label class="custom-control custom-radio">
@@ -67,6 +69,7 @@
     <span class="custom-control-description">Person</span>
   </label>
 </div>
+<!Name tile>
 <div class="form-row">
     <div class="col">
       <input type="text" class="form-control" placeholder="First name">
@@ -79,6 +82,7 @@
 
 	     <br>
 
+<!Sex radios>
 	     <h3 class="col-md-7">Sex</h3>
 	     <div class="form-check form-check-inline">
   <label class="form-check-label">
@@ -96,45 +100,63 @@
   </label>
 </div>
 
-	     <br>
+	     <br><br>
 
-	    <div class="container">
+<!Age group bar>
+	    			<h3 class="col-md-7">Age Group</h3>
+	    			<div class="btn-group" data-toggle="buttons">
+				  <label class="btn btn-secondary active">
+				    <input type="radio" name="categories" value="9-13" id="option1" autocomplete="off" checked> 9-13 
+				  </label>
+				  <label class="btn btn-secondary">
+				    <input type="radio" name="categories" value="14-30" id="option2" autocomplete="off"> 14-30 
+				  </label>
+				  <label class="btn btn-secondary">
+				    <input type="radio" name="categories" value="31-50" id="option3" autocomplete="off"> 31-50
+				  </label>
+				  <label class="btn btn-secondary">
+				    <input type="radio" name="categories" value="51+" id="option4" autocomplete="off"> 51+
+				  </label>				 
+			</div>
+
+			<br><br>
+
+<!Age group tile>
+			<h3 class="col-md-7">Age</h3>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon1">2</span>
+		  <input type="number" class="form-control" name="age" placeholder="Age" aria-label="Genjourist Name" aria-describedby="basic-addon1">
+		</div>
+
+		<br><br>
+
+<!Datepicker>
+		<h3 class="col-md-7">Date</h3>
+		<div class="container">
     <div class="row">
         <div class='col-sm-6'>
             <div class="form-group">
-                <div class='input-group date' id='datetimepicker5'>
-                    <input type='text' class="form-control" />
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='date' class="form-control" />
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
                 </div>
             </div>
         </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker5').datetimepicker({
-                    defaultDate: "11/1/2013",
-                    disabledDates: [
-                        moment("12/25/2013"),
-                        new Date(2013, 11 - 1, 21),
-                        "11/22/2013 00:53"
-                    ]
-                });
-            });
-        </script>
     </div>
 </div>
 
-<br>
+<!Genjourist name tile>
 	     <div class="mt-4"></div>
-		
-		<div class="input-group">
+				<div class="input-group">
 		  <span class="input-group-addon" id="basic-addon1">3</span>
 		  <input type="text" class="form-control" name="GenjouristName" placeholder="-by name Genjourist ( Only name)" aria-label="Genjourist Name" aria-describedby="basic-addon1">
 		</div>	
 		
 		<br>
 
+<!post content inputarea>
 	     <div class="form-group">
 		  <label for="comment">Post Content:</label>
 		  <textarea class="form-control" name="interviewcontent" rows="10" id="comment"></textarea>
@@ -147,7 +169,14 @@
 
 
 
+<!--  ===================================JAVASCRIPT=========================== -->
 
+	        <script type="number/javascript">
+            $(function () {
+                $('#datetimepicker1').data("DateTimePicker1").FUNCTION();
+
+            });
+        </script>
 
 </body>
 </html>

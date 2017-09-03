@@ -1,9 +1,16 @@
 <?php
-
+	
 	include('routes.php');
 	include('header.php');
 	include('category-header.php');
 	include('config/connect.php');
+	$category = $_GET['category'];
+	$category_post = "SELECT * FROM journals WHERE post_category = $category;";
+	$category_post_sql = $conn->query($category_post);
+
+	while ($row = $category_post_sql->fetch_assoc()) {
+		echo $row['post_id'];
+	}
 
 ?>
 

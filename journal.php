@@ -5,8 +5,12 @@
 	include('category-header.php');
 	include('config/connect.php');
 
-	$query = "SELECT * from journals";
-	$journals =$conn->query($query);
+
+	  // TOP 4 articles query
+  $top4 = "SELECT * FROM journals ORDER BY post_counter DESC LIMIT 4;";
+
+	$top4_sql = $conn->query($top4);
+
 
 ?>
     <!-- Main section -->
@@ -19,17 +23,17 @@
 
 <?php
 
-	while($row = $journals->fetch_assoc()){
+	while($row1 = $top4_sql->fetch_assoc()){
 		?>
 
-		  <div class="card orange">
-		    <img class="card-img-top" src="<?php echo $row['img_url']?>" alt="Card image cap">
+		  <div class="card">
+		    <img class="card-img-top" src="<?php echo $row1['img_url']?>" alt="Card image cap" >
 		    <div class="card-body">
-		      <h4 class="card-title"> <a href="post.php?post_id=<?php echo $row['post_id']; ?>"> <?php echo $row['post_title']; ?></a></h4>
+		      <h4 class="card-title"> <a href="post.php?post_id=<?php echo $row1['post_id']; ?>"> <?php echo $row1['post_title']; ?></a></h4>
 		      <p class="card-text">
 		      	
 		      	<?php
-		      		$body = $row['post_content'];
+		      		$body = $row1['post_content'];
 		      		echo substr($body, 0,80)."...";
 		      	?>
 
@@ -61,7 +65,7 @@
 	  </ol>
 	  <div class="carousel-inner">
 	    <div class="carousel-item active">
-	      <img class="d-block w-100" src="img/svg/first-slide.svg" alt="First slide">
+	      <img class="d-block w-100" src="img/svg/first-slide.svg"  alt="First slide">
 	    </div>
 	    <div class="carousel-item">
 	      <img class="d-block w-100" src="img/svg/second-slide.svg" alt="Second slide">

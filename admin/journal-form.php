@@ -7,9 +7,18 @@
 	if(@$_POST['submit']){
 		
 
-		if (empty($_POST['postName']) || empty($_POST['category']) || empty($_POST['GenjourName']) || empty($_POST['tags']) || empty($_POST['postContent'])) {
+		if (empty($_POST['postName']) || empty($_POST['categories']) || empty($_POST['GenjouristName']) || empty($_POST['tags']) || empty($_POST['postContent'])) {
 
-			echo "Please fill all the field amd Check carefully before submitting";
+			echo '
+			<div class = "container mt-2">
+				<div class="alert alert-warning alert-dismissible fade show" role="alert">
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				  <strong>Holy mofo!</strong> Please fill all the fields.
+				</div>
+			</div
+			';
 
 		}else {
 	
@@ -51,7 +60,7 @@
                 echo $_FILES["photo"]["name"] . " is already exists.";
             } else{
                 move_uploaded_file($_FILES["photo"]["tmp_name"], "../uploads/journal/" . $_FILES["photo"]["name"]);
-                echo "Your file was uploaded successfully.";
+                //echo "Image uploaded successfully.";
             } 
         } else{
             echo "Error: There was a problem uploading your file. Please try again."; 
@@ -69,7 +78,19 @@
 	//echo " ".$postName. " ".$category." ".$GenjouristName." ".$tags." ". $postContent." ". $img_url." ".$date; 
 
 	
-	$query = "insert into journals (post_title, post_category, genjourist_name, post_content,post_tags, post_counter, post_date, post_url, img_url) values ('$postName','$category','$GenjouristName','$postContent','$tags', NULL ,'$date','$post_url','$img_url')";
+	$query = "insert into journals (post_title, post_category, genjourist_name, post_content,post_tags, post_counter, post_date, post_url, img_url) values ('$postName','$category','$GenjouristName','$postContent','$tags', '0' ,'$date','$post_url','$img_url')";
+
+	echo'
+	<div class="conatiner">
+		<div class="alert alert-success alert-dismissible fade show" role="alert">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    <span aria-hidden="true">&times;</span>
+		  </button>
+		  <strong>Holy madafka!</strong> Post is successfully submitted.
+		</div>
+	</div>
+
+	';
 
 		if (!mysqli_query($conn,$query))
 		  {

@@ -38,7 +38,7 @@ include ('header.php');
 	</div>
 
 <div class="container-fluid row text-center "">
->>>>>>> origin/master
+
 <div class="card border-warning mb-3 ml-3 mr-3" style="max-width: 35rem;">
   <div class="card-header">Header</div>
   <div class="card-body text-warning">
@@ -70,7 +70,7 @@ include ('header.php');
   </div>
 </div>
 </div>
-</div>
+
 
 
 <?php

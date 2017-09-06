@@ -1,6 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <footer>
+=======
+<section>
+>>>>>>> origin/master
    <div class="container">
         <div class="row">
           <div class="col-md-3 col-xs-3">
@@ -51,7 +55,11 @@
 
  </div>
 
+<<<<<<< HEAD
 </footer>
+=======
+</section>
+>>>>>>> origin/master
 
 
 
@@ -82,8 +90,16 @@
 
   </div>
 
+<<<<<<< HEAD
 </div>
 
 </body>
 </html>
 =======
+=======
+</dvi>
+
+</body>
+</html>
+>>>>>>> origin/master
+>>>>>>> origin/master

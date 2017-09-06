@@ -6,6 +6,12 @@
   $query = "SELECT * FROM categories";
   $categories =  $conn->query($query);
 
+  $shuffle = "SELECT post_id from journals ORDER BY RAND() LIMIT 1";
+  $shuffle_sql = $conn->query($shuffle);
+  while ($row = $shuffle_sql->fetch_assoc()) {
+    $post_id = $row['post_id'];
+  }
+
 ?>
 
 
@@ -48,7 +54,7 @@
     </ul>
             <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
           <li class="nav-item">
-              <a class="nav-link p-2" href="#">
+              <a class="nav-link p-2" href="post.php?post_id=<?php echo $post_id; ?>">
               <img src="img/svg/nav-icons/shuffle-arrows.svg " width="25" height="25" alt="">
               </a>
             </li> 

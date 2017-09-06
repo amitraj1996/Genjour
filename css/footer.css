@@ -1,4 +1,4 @@
-  footer{
+  section{
     background-color: #190629;
     color: white;
     padding: 15px;
@@ -6,17 +6,17 @@
   }
 
 
-  footer .social-footer li{
+  section .social-footer li{
     display: inline-block;
     padding: 5px;
     
   }
 
-  footer ul{
+  section ul{
     margin-left: -40px;
   }
-
-  footer ul li {
+  
+  section ul li {
     list-style-type: none;
    
   }

@@ -67,7 +67,7 @@
   
 </div>
 
-<footer>
+<section>
    <div class="container">
         <div class="row">
           <div class="col-md-3 col-xs-3">
@@ -124,7 +124,7 @@
 
  </div>
 
-</footer>
+</section>
  
 
 

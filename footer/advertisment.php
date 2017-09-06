@@ -4,11 +4,6 @@ include ('header.php');
  ?>
 <!-- slider advertisment-->
 
-<<<<<<< HEAD
-=======
-<!-- slider advertisment-->
-
->>>>>>> origin/master
 	<div class="mt-3 ml-4 mr-4">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 	  <ol class="carousel-indicators">
@@ -41,12 +36,9 @@ include ('header.php');
 	  </a>
 	</div>
 	</div>
-  <!-- some packages related to advertisment -->
-<<<<<<< HEAD
-<div class="container-fluid row text-center">
-=======
+
 <div class="container-fluid row text-center "">
->>>>>>> origin/master
+
 <div class="card border-warning mb-3 ml-3 mr-3" style="max-width: 35rem;">
   <div class="card-header">Header</div>
   <div class="card-body text-warning">
@@ -78,20 +70,9 @@ include ('header.php');
   </div>
 </div>
 </div>
-</div>
-<<<<<<< HEAD
-</div>
-<!-- including footer files -->
-<?php
-include 'footer.php';
-?>
-=======
-<!-- start of footer file -->
 
 
 
 <?php
 	include('footer.php');
 ?>
-
->>>>>>> origin/master

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
+=======
 
+>>>>>>> origin/master
 <?php
 include ('routes.php');
 include ('header.php');
@@ -103,4 +107,8 @@ include ('header.php');
 <?php
 	include('footer.php');
 ?>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/master
 >>>>>>> origin/master

@@ -1,5 +1,5 @@
-
-<footer>
+ 
+<section>
    <div class="container">
         <div class="row">
           <div class="col-md-3 col-xs-3">
@@ -15,24 +15,17 @@
           <h5>Partner with us</h5>
              <ul>
               <li>Advertisement</li>
-              <li>Investors</li>
               <li>Sponsors</li>
 
             </ul>           
           </div>
           <div class="col-md-2 col-xs-2">
-          <h5>Journal</h5>
+          <h5>Become a Genjourist</h5>
             <ul>
               <li>Write for us</li>
             </ul>            
           </div>
                     <div class="col-md-2 col-xs-2">
-          <h5>Interview</h5>
-            <ul>
-              <li>Get interviewed</li>
-            </ul>            
-          </div>
-          <div class="col-md-2 col-xs-2 ">
             <h5>Follow Us</h5>
             <ul class="social-footer">
               <li><i class="fa fa-facebook " aria-hidden="true"></i></li>
@@ -40,7 +33,9 @@
               <li><i class="fa fa-twitter " aria-hidden="true"></i></li>
               <li><i class="fa fa-instagram " aria-hidden="true"></i></li>
               <li><i class="fa fa-pinterest-p " aria-hidden="true"></i></li>
-            </ul>
+            </ul>            
+          </div>
+          <div class="col-md-2 col-xs-2 ">
               <h5><small>SUBSCRIBE US</small></h5>
                         <a href="#" class="navbar-btn btn-danger btn ">Subscribe on YouTube</a>
            </div>
@@ -50,7 +45,7 @@
 
  </div>
 
-</footer>
+</section>
  
 
 

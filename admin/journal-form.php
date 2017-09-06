@@ -27,6 +27,10 @@
 		$GenjouristName = $_POST["GenjouristName"];
 		$tags = $_POST["tags"];
 		$postContent  = $_POST["postContent"];
+		
+		//
+		$postContent1 = str_replace("'","''",$postContent);
+
 		$post_url = str_replace(' ', '-', $postName);;
 
 		// Current date and time
@@ -78,7 +82,7 @@
 	//echo " ".$postName. " ".$category." ".$GenjouristName." ".$tags." ". $postContent." ". $img_url." ".$date; 
 
 	
-	$query = "insert into journals (post_title, post_category, genjourist_name, post_content,post_tags, post_counter, post_date, post_url, img_url) values ('$postName','$category','$GenjouristName','$postContent','$tags', '0' ,'$date','$post_url','$img_url')";
+	$query = "insert into journals (post_title, post_category, genjourist_name, post_content,post_tags, post_counter, post_date, post_url, img_url) values ('$postName','$category','$GenjouristName','$postContent1','$tags', '0' ,'$date','$post_url','$img_url')";
 
 	echo'
 	<div class="conatiner">

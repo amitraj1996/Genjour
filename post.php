@@ -83,7 +83,7 @@ echo'<meta name="description" content="'.$row['post_title'].'" />
   }
 ?>
         <!-- Sidebar Widgets Column -->
-        <div class="col-md-4">
+        <div class="col-lg-4">
 
           <!-- Popular Widget -->
 		<?php
@@ -92,7 +92,7 @@ echo'<meta name="description" content="'.$row['post_title'].'" />
 
           <!-- Latest Widget -->
 		<?php
-		include('functions/top-posts.php');
+		include('functions/recent-articles.php');
 		?>
 
           <!-- More by this genjourist -->

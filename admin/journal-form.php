@@ -1,18 +1,43 @@
 
 <?php
+
+	include('../config/connect.php');
+
 	
 	if(@$_POST['submit']){
-		//if (empty($_POST['question1']) || empty($_POST['question2']) || empty($_POST['question3']) || empty($_POST['question4']) || empty($_POST['question5']) ){}
 		
+
+		if (empty($_POST['postName']) || empty($_POST['categories']) || empty($_POST['GenjouristName']) || empty($_POST['tags']) || empty($_POST['postContent'])) {
+
+			echo '
+			<div class = "container mt-2">
+				<div class="alert alert-warning alert-dismissible fade show" role="alert">
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				  <strong>Holy mofo!</strong> Please fill all the fields.
+				</div>
+			</div
+			';
+
+		}else {
+	
 		$postName = $_POST["postName"];
 		$category = $_POST["categories"];
 		$GenjouristName = $_POST["GenjouristName"];
 		$tags = $_POST["tags"];
 		$postContent  = $_POST["postContent"];
+		$post_url = str_replace(' ', '-', $postName);;
+
+		// Current date and time
+		date_default_timezone_set('Asia/Kolkata');
+		$date = date('Y-m-d H:i:s');
+		
+
 
 		// image upload
 
-		    // Check if file was uploaded without errors
+		// Check if file was uploaded without errors
     if(isset($_FILES["photo"]) && $_FILES["photo"]["error"] == 0){
         $allowed = array("jpg" => "image/jpg", "jpeg" => "image/jpeg", "gif" => "image/gif", "png" => "image/png");
         $filename = $_FILES["photo"]["name"];
@@ -31,10 +56,11 @@
         if(in_array($filetype, $allowed)){
             // Check whether file exists before uploading it
             if(file_exists("../uploads/journal/" . $_FILES["photo"]["name"])){
+
                 echo $_FILES["photo"]["name"] . " is already exists.";
             } else{
                 move_uploaded_file($_FILES["photo"]["tmp_name"], "../uploads/journal/" . $_FILES["photo"]["name"]);
-                echo "Your file was uploaded successfully.";
+                //echo "Image uploaded successfully.";
             } 
         } else{
             echo "Error: There was a problem uploading your file. Please try again."; 
@@ -44,35 +70,39 @@
     }
 
     $imageName = $_FILES["photo"]["name"];  // Image name
-    
+	$img_url = "uploads/journal/".$imageName;    // Image Url
 
+	
     // end image upload
 
+	//echo " ".$postName. " ".$category." ".$GenjouristName." ".$tags." ". $postContent." ". $img_url." ".$date; 
+
+	
+	$query = "insert into journals (post_title, post_category, genjourist_name, post_content,post_tags, post_counter, post_date, post_url, img_url) values ('$postName','$category','$GenjouristName','$postContent','$tags', '0' ,'$date','$post_url','$img_url')";
+
+	echo'
+	<div class="conatiner">
+		<div class="alert alert-success alert-dismissible fade show" role="alert">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    <span aria-hidden="true">&times;</span>
+		  </button>
+		  <strong>Holy madafka!</strong> Post is successfully submitted.
+		</div>
+	</div>
+
+	';
+
+		if (!mysqli_query($conn,$query))
+		  {
+		  echo("Error description: " . mysqli_error($conn));
+		  }
 
 
+			$conn->close();
 
-		echo " ".$postName. " ".$category." ".$GenjouristName." ".$tags." ". $postContent; 
-
-		// file creation 
-
-		$name = str_replace(' ', '-', $postName); // replace whitespace with - (hypne)
-		
-		$createPhpFile = $name.".php"; // save file with .php extension
-
-		$fileContent = "
-		
-		 ";
-		
-		$myfile = fopen($createPhpFile, "w") or die("Unable to open file!");
-		//$txt = "John Doe\n";
-		fwrite($myfile, $fileContent);
-
-		fclose($myfile);
 	}
-	else{
 
-	}
-
+}
 
 ?>
 
@@ -285,5 +315,6 @@ $(function() {
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 </body>
 </html>

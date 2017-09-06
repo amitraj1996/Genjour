@@ -5,6 +5,13 @@
 	include('category-header.php');
 	include('config/connect.php');
 
+
+	  // TOP 4 articles query
+  $top4 = "SELECT * FROM journals ORDER BY post_counter DESC LIMIT 4;";
+
+	$top4_sql = $conn->query($top4);
+
+
 ?>
     <!-- Main section -->
 
@@ -13,46 +20,36 @@
 
 	<div class="mt-5 row">
 		<div class="card-deck">
-		  <div class="card orange">
-		    <img class="card-img-top" src="img/svg/sample.svg" alt="Card image cap">
-		    <div class="card-body">
-		      <h4 class="card-title">Post title</h4>
-		      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
-		    </div>
-	  	  </div>  
-		  <div class=" card">
-		    <img class="card-img-top" src="img/svg/sample.svg" alt="Card image cap">
-		    <div class="card-body">
-		      <h4 class="card-title">Post title</h4>
-		      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
-		    </div>
-		  </div>
-		    <div class="card">
-		    <img class="card-img-top" src="img/svg/sample.svg" alt="Card image cap">
-		    <div class="card-body">
-		      <h4 class="card-title">Post title</h4>
-		      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
-		    </div>
-		  </div>
+
+<?php
+
+	while($row1 = $top4_sql->fetch_assoc()){
+		?>
+
 		  <div class="card">
-		    <img class="card-img-top" src="img/svg/sample.svg" alt="Card image cap">
+		    <img class="card-img-top" src="<?php echo $row1['img_url']?>" alt="Card image cap" >
 		    <div class="card-body">
-		      <h4 class="card-title">Post title</h4>
-		      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+		      <h4 class="card-title"> <a href="post.php?post_id=<?php echo $row1['post_id']; ?>"> <?php echo $row1['post_title']; ?></a></h4>
+		      <p class="card-text">
+		      	
+		      	<?php
+		      		$body = $row1['post_content'];
+		      		echo substr($body, 0,80)."...";
+		      	?>
+
+		      </p>
 		    </div>
 		    <div class="card-footer">
 		      <small class="text-muted">Last updated 3 mins ago</small>
 		    </div>
-		  </div>
+	  	  </div>
+
+<?php
+	}
+
+?>
+
+
 		</div>
 	</div>
 
@@ -68,7 +65,7 @@
 	  </ol>
 	  <div class="carousel-inner">
 	    <div class="carousel-item active">
-	      <img class="d-block w-100" src="img/svg/first-slide.svg" alt="First slide">
+	      <img class="d-block w-100" src="img/svg/first-slide.svg"  alt="First slide">
 	    </div>
 	    <div class="carousel-item">
 	      <img class="d-block w-100" src="img/svg/second-slide.svg" alt="Second slide">

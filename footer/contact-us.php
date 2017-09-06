@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 <!-- including file from other folders -->
 <?php
 include 'routes.php';
@@ -69,5 +73,11 @@ include 'header.php';
 
 <!-- including footer files -->
 <?php
+<<<<<<< HEAD
 include 'footer.php';
 ?>
+=======
+	include('footer.php');
+?>
+
+>>>>>>> origin/master

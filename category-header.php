@@ -13,7 +13,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-            <a class="navbar-brand" href="#">  
+            <a class="navbar-brand" href="journal.php">  
                 <img src="img/svg/nav-icons/journal.svg" width="35" height="35" alt=""> 
             </a>
 
@@ -28,13 +28,13 @@
             ?>
               
               <?php 
-                if(isset($_GET['category'] == $row["category_name"];)){
+               // if(isset($_GET['category'] && $_GET['category_name'] == $row["category_name"])){
               ?>
               <li class="nav-item active">
-                <a class="nav-link" href="category/<?php echo $row["category_name"]; ?>"><?php echo $row["category_name"]; ?></a>
+                <a class="nav-link" href="category.php?category=<?php echo $row["category_name"]; ?>"><?php echo $row["category_name"]; ?></a>
               </li>             
               <?php }
-                else{
+               /* else{
 
                   ?>
                   <li class="nav-item active">
@@ -42,7 +42,7 @@
                   </li>
                   <?php
                 }
-                } 
+                } */
 
               ?>
     </ul>

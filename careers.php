@@ -3,7 +3,7 @@ include ('routes.php');
 include ('header.php');
  ?>
 <!-- cards for various positions  -->
- <div class="container mt-4">
+ <div class="container mt-4 mb-4">
 
 <!-- form for enquiry about recruitments -->
 <form>
@@ -53,7 +53,7 @@ include ('header.php');
 </span>
 </form>
 
-
+</div>
 <?php
 	include('footer.php');
 ?>

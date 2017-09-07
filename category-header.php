@@ -6,6 +6,12 @@
   $query = "SELECT * FROM categories";
   $categories =  $conn->query($query);
 
+  $shuffle = "SELECT post_id from journals ORDER BY RAND() LIMIT 1";
+  $shuffle_sql = $conn->query($shuffle);
+  while ($row = $shuffle_sql->fetch_assoc()) {
+    $post_id = $row['post_id'];
+  }
+
 ?>
 
 
@@ -13,7 +19,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-            <a class="navbar-brand" href="#">  
+            <a class="navbar-brand" href="journal.php">  
                 <img src="img/svg/nav-icons/journal.svg" width="35" height="35" alt=""> 
             </a>
 
@@ -28,13 +34,13 @@
             ?>
               
               <?php 
-                if(isset($_GET['category'] == $row["category_name"];)){
+               // if(isset($_GET['category'] && $_GET['category_name'] == $row["category_name"])){
               ?>
               <li class="nav-item active">
-                <a class="nav-link" href="category/<?php echo $row["category_name"]; ?>"><?php echo $row["category_name"]; ?></a>
+                <a class="nav-link" href="category.php?category=<?php echo $row["category_name"]; ?>"><?php echo $row["category_name"]; ?></a>
               </li>             
               <?php }
-                else{
+               /* else{
 
                   ?>
                   <li class="nav-item active">
@@ -42,13 +48,13 @@
                   </li>
                   <?php
                 }
-                } 
+                } */
 
               ?>
     </ul>
             <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
           <li class="nav-item">
-              <a class="nav-link p-2" href="#">
+              <a class="nav-link p-2" href="post.php?post_id=<?php echo $post_id; ?>">
               <img src="img/svg/nav-icons/shuffle-arrows.svg " width="25" height="25" alt="">
               </a>
             </li> 

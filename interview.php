@@ -75,7 +75,6 @@ Sed augue ligula, laoreet ac velit maximus, pharetra viverra purus. Etiam tortor
     </div>
   </div>
 </div>
-
 <!-- column no 3 -->
   <div class="col-2">
     <div class="card">
@@ -86,6 +85,7 @@ Sed augue ligula, laoreet ac velit maximus, pharetra viverra purus. Etiam tortor
       </div>
     </div>
   </div>
+</div>
 <!-- </div> -->
 <!-- </div> -->
 <!-- including footer files -->

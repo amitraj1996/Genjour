@@ -22,7 +22,7 @@ include 'header.php';
 {
   align:right;
 }
-.prof
+.profile
 {
 
 }
@@ -47,7 +47,7 @@ include 'header.php';
       <div class="card-img back">
         <h4 class="titles text-center">Interview <button type="button" class="bt btn btn-success float-right">Success</button></h4>
           <h6 class="text-muted float-bottom float-center">Date and time</h6>
-          <img class="prof" src="" alt="Profile photo">
+          <img class="profile" src="" alt="Profile photo">
           <div class="row float-bottom">
             <h5>Share On</h5>
               <div class="col-md-3 col-xs-3">
@@ -70,7 +70,7 @@ Aliquam euismod est eu semper tincidunt. Vivamus varius ex eget ipsum fringilla 
 Phasellus est metus, laoreet id dolor in, bibendum eleifend risus. Ut a consequat tellus. In tincidunt diam quis semper porttitor. Pellentesque consequat semper quam, et egestas arcu. Nulla sed elementum turpis. Praesent nec lorem turpis. Nulla blandit quis turpis eget imperdiet. Maecenas et scelerisque massa. Maecenas eget tincidunt nibh, et lobortis justo. Donec eget magna eget quam rhoncus varius. Nam a metus id orci mollis aliquet et eget lectus. Curabitur malesuada commodo tellus quis venenatis. Suspendisse posuere congue imperdiet. Vivamus ac neque id erat ornare sollicitudin a eu erat.
 
 Sed augue ligula, laoreet ac velit maximus, pharetra viverra purus. Etiam tortor turpis, vulputate eget mattis quis, pretium nec elit. Morbi dignissim pellentesque nunc id porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum hendrerit egestas eros, non finibus sem commodo eu. Etiam lobortis viverra fringilla. Integer nec sapien sollicitudin, euismod neque in, hendrerit est. Nunc vulputate ipsum eget erat egestas tincidunt. Suspendisse condimentum tellus sed dictum placerat.</p>
-</div>
+
       </div>
     </div>
   </div>
@@ -86,8 +86,8 @@ Sed augue ligula, laoreet ac velit maximus, pharetra viverra purus. Etiam tortor
       </div>
     </div>
   </div>
-</div>
-</div>
+<!-- </div> -->
+<!-- </div> -->
 <!-- including footer files -->
 <?php
 include 'footer.php';

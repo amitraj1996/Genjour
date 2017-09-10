@@ -1,7 +1,15 @@
 <?php
-include 'routes.php';
-include 'header.php';
+//include 'routes.php';
+//include 'header.php';
  ?>
+<head>
+      <!-- Normalize HTML5 Reset -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
 <!-- ending the including of header and routes file -->
 <div class="mt-4 mb-4 container">
   <div class="row">
@@ -45,7 +53,7 @@ include 'header.php';
 </div>
 <!-- end of gender bar -->
 <div class="btn-group btn-group-lg mt-3" role="group" aria-label="...">
-  <h3>Age Group    </h3>
+  <h3>Age Group</h3>
   <button type="button" class="btn btn-secondary">9-13</button>
   <button type="button" class="btn btn-secondary">14-30</button>
   <button type="button" class="btn btn-secondary">31-50</button>
@@ -79,4 +87,5 @@ include 'header.php';
 </div>
 <!-- starting to include the footer file -->
  <?php
- include 'footer.php'; ?>
+ //include '../includes/footer.php';
+  ?>

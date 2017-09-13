@@ -3,63 +3,54 @@
 include 'routes.php';
 include 'header.php';
 ?>
-<!-- adding external styling elements -->
-<style media="screen">
-.sizing
-{
 
-}
-.back
-{
-  background-image: url('http://cdn.wallpapersafari.com/16/68/M4VEtx.jpg');
-  display: inline-block;
-  width: 685px;
-  height: 375px;
-  margin: auto;
-  border: 3px solid #cfd2d6
-}
-.bt
-{
-  align:right;
-}
-.profile
-{
 
-}
-</style>
 <!-- end of header inclusion -->
 <!-- column no 1 -->
-<div class="container mt-4 mb-4">
-<div class="row">
-  <div class="col-2">
+<div class="container-fluid mt-4 mb-4 ">
+<div class="row ">
+  <div class="col-md-2 ">
     <div class="card">
       <div class="card-body">
         <h4 class="card-title text-center">Previous</h4>
+        <img class="card-img-top mb-2 rounded" src="img/svg/245x260.svg" alt="Card image cap">
+        
+        <div class="nav justify-content-center">
+          <button type="button" class="btn btn-primary">Previous</button>
+        </div>
         <p class="card-text lead">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
 <!-- column no 2 -->
-<div class="col-8">
+<div class="col-md-8">
   <div class="card">
     <div class="card-body">
-      <div class="card-img back">
-        <h4 class="titles text-center">Interview <button type="button" class="bt btn btn-success float-right">Success</button></h4>
-          <h6 class="text-muted float-bottom float-center">Date and time</h6>
-          <img class="profile" src="" alt="Profile photo">
-          <div class="row float-bottom">
-            <h5>Share On</h5>
-              <div class="col-md-3 col-xs-3">
-            <ul class="social-footer">
-              <i class="fa fa-facebook " aria-hidden="true"></i>
-              <i class="fa fa-google-plus  " aria-hidden="true"></i>
-              <i class="fa fa-twitter " aria-hidden="true"></i>
-              <i class="fa fa-instagram " aria-hidden="true"></i>
-              <i class="fa fa-pinterest-p " aria-hidden="true"></i>
-            </ul>
-            </div>
-        </div>
+      <div class="card-img">
+      <button type="button" class="bt btn btn-dark float-right">Category</button>
+        <p class="display-4">Interview Heading heading 1 top of the content so placed here </p>
+        <hr>
+          <img class="rounded-circle" src="img/svg/64x64.svg" alt="Profile photo">
+          <div class="row">
+           
+              <div class="col">
+              
+                <ul class="nav pull-right">
+                    <li class="nav-item "><a href="#" class="nav-link pr-0"><i class="fa fa-facebook "></i></a></li>
+                    <li class="nav-item "><a href="#" class="nav-link pr-0"><i class="fa fa-google-plus "></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-instagram "></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-twitter"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-pinterest-p "></i></a></li>
+                </ul>
+              </div>                     
+          </div>
+                        <div class="row">
+                  <div class="col">
+                    <button type="button" class="btn btn-info ">Age Category</button>
+                  </div>
+                  <div class="col"><h6 class="text-muted text-right">Date and time</h6></div>
+                  
+                </div>
     </div>
 </div>
 <div class="container">
@@ -71,20 +62,35 @@ Phasellus est metus, laoreet id dolor in, bibendum eleifend risus. Ut a consequa
 
 Sed augue ligula, laoreet ac velit maximus, pharetra viverra purus. Etiam tortor turpis, vulputate eget mattis quis, pretium nec elit. Morbi dignissim pellentesque nunc id porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum hendrerit egestas eros, non finibus sem commodo eu. Etiam lobortis viverra fringilla. Integer nec sapien sollicitudin, euismod neque in, hendrerit est. Nunc vulputate ipsum eget erat egestas tincidunt. Suspendisse condimentum tellus sed dictum placerat.</p>
 
+<blockquote class="blockquote text-right">
+ 
+  <footer class="blockquote-footer">Covered By <cite title="Source Title">Raj Amit Singh</cite></footer>
+</blockquote>
+
+
       </div>
-    </div>
+
   </div>
 </div>
 <!-- column no 3 -->
-  <div class="col-2">
+  <div class="col-md-2">
     <div class="card">
       <div class="card-body">
         <h4 class="card-title text-center">Upcoming</h4>
-        <p class="card-text lead">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <img class="card-img-top mb-2 rounded" src="img/svg/245x260.svg" alt="Card image cap">
+        <div class="nav justify-content-center">
+          <button type="button" class="btn btn-primary">Next</button>
+        </div>
+        
+        
+        <p class="card-text lead mt-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac condimentum justo, id vulputate sapien.
+        </p>
       </div>
     </div>
   </div>
+  </div>
+  <!-- row ends here -->
 </div>
 <!-- </div> -->
 <!-- </div> -->

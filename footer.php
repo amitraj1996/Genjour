@@ -27,6 +27,14 @@
           </div>
                     <div class="col-md-2 col-xs-2">
             <h5>Follow Us</h5>
+
+                <ul class="nav justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-pinterest-p fa-lg"></i></a></li>
+                </ul>
             <ul class="social-footer">
               <li><i class="fa fa-facebook " aria-hidden="true"></i></li>
               <li><i class="fa fa-google-plus  " aria-hidden="true"></i></li>

@@ -43,6 +43,9 @@
     color: #eee;
   }
 
+  #navbarNav > ul > li > a > i,#navbarNav > ul > li > a > i:hover{
+    color: white;
+  }
  
 
 
@@ -59,19 +62,19 @@
   <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
               <li class="nav-item ">
-                <a class="nav-link" href="https://www.facebook.com/Genjourmedia/"><img src="img/svg/facebook.svg"> </a>
+                <a class="nav-link" href="https://www.facebook.com/Genjourmedia/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i> </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://twitter.com/GenjourMedia"><img src="img/svg/twitter.svg"></a>
+                <a class="nav-link" href="https://twitter.com/GenjourMedia"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="http://www.instagram.com/genjour"><img src="img/svg/instagram.svg"></a>
+                <a class="nav-link" href="http://www.instagram.com/genjour"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
               </li>
               <li>
-                <a href="https://in.pinterest.com/genjour/pins/"></a>
+                <a class="nav-link" href="https://in.pinterest.com/genjour/pins/"><i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i></a>
               </li>
               <li>
-                <a href="https://plus.google.com/u/0/105599905295491593572"></a>
+                <a class="nav-link" href="https://plus.google.com/u/0/105599905295491593572"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a>
               </li>
           </ul>
   </div>

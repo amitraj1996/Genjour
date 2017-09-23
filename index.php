@@ -1,161 +1,157 @@
 
 <html>
   <head>
+ 
     <title>Genjour - Genjour Media</title>
 
     <!-- Normalize HTML5 Reset -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
     <!-- styles.css Link -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
 
     <!-- Responsive  -->
     <meta name="viewport" content=" width=device-width,initial-scale=1, maximum-scale=1, user-scalable=0">
   </head>
-
-  <body>
-
-      <div class="head">
-          <div class="logo">
-            <img src="img/svg/logo.svg">
-          </div>
-          <div class="nav">
-            <a href="http://www.facebook.com/Genjourmedia" alt="Facebook" target=_blank><img src="img/svg/facebook.svg"></a>
-            <a href="http://www.twitter.com/GenjourMedia" alt="Twitter" target=_blank><img src="img/svg/twitter.svg"></a>
-            <a href="http://www.instagram.com/genjour" alt="Instagram" target=_blank><img src="img/svg/instagram.svg"></a>
-          </div>
-      </div>
-
-      <div class="main-head">
-        <p>Where would you like to head to?</p>
-        <center>
-      <div class="wrapper">
-        <a href="/journal/index.php"><div class="journal"><span>Journal</span></div></a>
-        <a href="/interview/index.php"><div class="interview"><span>Interview</span></div></a>
-        <a href="/survey/survey.php"><div class="survey"><span>Survey</span></div></a>
-        <a href="/ComingSoon/index.html"><div class="magzine"><span>Magazine</span></div></a>  
-        <a href="/ComingSoon/index.html"><div class="tv"><span>Genjour Tv</span></div></a>
-      </div>
-      </center>
-      </div>
-
-
-      <div class="about">
-        <div class="main-text">
-          <h1>Genjour</h1>
-        <h3>THINK. WRITE. SHOW</h3>
-        <p class="main-info">Genjour is a social media company, an idea which came in to existence with a need of truthful communication between people. Nowadays, people are not interested in knowing what is happening in the world instead they are interested in their own life. They are more worried about their future and confused about their purpose in life. What they need are the right stories, experiences and the lessons so that they do something productive. They are looking for answers and not whereabouts.<br/><br/>
-
-        <br/><br/>
-
-
-        <strong><em>Genjour stands for generations' Journal. Genjour is a journey for all those who are seeking answers in their life and searching for the right path.</em></strong></p>
-        </div>
-        <div class="logo-big clearfix">
-          <img src="img/svg/logo-big.svg">
-        </div>
-
-      </div>
-
-<div class="mt-3">
+<style type="text/css">
   
-</div>
+ 
+  .navbar{
+    background-color: #2b292b;
+  }
 
-<section>
-   <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-xs-3">
-          <h5>Company</h5>
-             
-              <a href="footer/about-us.php">About Us</a>
-              <br>
-              <a href="footer/careers.php">Careers</a>
-              <br>
-              <a href="footer/contact-us.php">Contact Us</a>
+  body > div.container.wrapper > div.d-flex.justify-content-around > a > figure > img{
+     width: 150px;
+    height: 150px;
+  }
+  body > div.container.wrapper > div> span{
+    font-size: 25px;
+  }
+ body > div.BottomFooter{
+    background-color: #2b292b;
+    
+  }
+ body > div.BottomFooter > div > div > div > a{
+    text-decoration: none;
+    color: #eee;
+  }
 
-                      
-          </div>
-          <div class="col-md-3 col-xs-3">
-          <h5>Partner with us</h5>
-             
-              Advertisement
-              <br>
-              Investors
-              <br>
-              Sponsors
-
-                       
-          </div>
-          <div class="col-md-2 col-xs-2">
-          <h5>Journal</h5>
-            
-
-              Write for us
-                      
-          </div>
-                    <div class="col-md-2 col-xs-2">
-          <h5>Interview</h5>
-            
-              Get interviewed
-                    
-          </div>
-          <div class="col-md-2 col-xs-2 ">
-            <h5>Follow Us</h5>
-            <div class="social-footer">
-              <i class="fa fa-facebook " aria-hidden="true"></i>
-              <i class="fa fa-google-plus  " aria-hidden="true"></i>
-              <i class="fa fa-twitter " aria-hidden="true"></i>
-              <i class="fa fa-instagram " aria-hidden="true"></i>
-              <i class="fa fa-pinterest-p " aria-hidden="true"></i>
-            </div>
-            <br>
-              <h5><small>SUBSCRIBE US</small></h5>
-                        <a href="#" class="navbar-btn btn-danger btn ">Subscribe on YouTube</a>
-           </div>
-
-        </div>
-
-
- </div>
-
-</section>
  
 
 
-<div class="footer-bottom">
 
-  <div class="container">
 
-    <div class="row">
+</style>
+  <body>
 
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#"><img src="img/svg/logo.svg"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+              <li class="nav-item ">
+                <a class="nav-link" href="https://www.facebook.com/Genjourmedia/"><img src="img/svg/facebook.svg"> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/GenjourMedia"><img src="img/svg/twitter.svg"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://www.instagram.com/genjour"><img src="img/svg/instagram.svg"></a>
+              </li>
+              <li>
+                <a href="https://in.pinterest.com/genjour/pins/"></a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/u/0/105599905295491593572"></a>
+              </li>
+          </ul>
+  </div>
+</nav>
+<!--  =================================MOBILE=============================== -->
 
-          Genjour Media Pvt. Ltd. &copy; 2017 | All rights reserved
 
-      </div>
-
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
-        <div class="design">
-
-           <a href="#"><small>Privacy Policy</small> </a> 
-           <a target="_blank" href="#"><small>Terms &amp; Conditions</small></a>
-
-        </div>
-
-      </div>
-
+<div class="container mt-3">
+  <div class="col-md-12 text-center">
+      <p class="display-4 text-center mt-5 mb-5">WHERE WOULD YOU LIKE TO HEAD ?</p>   
+  </div>
+  <div class="row d-flex justify-content-around mb-5">
+    <div class="col-xs-5 col-sm-6 col-md-2">
+      <a href="http://genjour.com/journal.php">
+        <figure class="figure">
+          <img src="img/icon/header-icons/cjournal.svg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption text-center">JOURNAL</figcaption>
+        </figure>
+      </a>
+    </div>
+    <div class="col-xs-5 col-sm-6 col-md-2">
+      <a href="http://genjour.com/interview.php">
+        <figure class="figure">
+          <img src="img/icon/header-icons/cinterview.svg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption text-center">INTERVIEW</figcaption>
+        </figure>
+      </a>
+    </div>
+    <div class="col-xs-5 col-sm-6 col-md-2">
+      <a href="http://genjour.com/survey.php">
+        <figure class="figure">
+          <img src="img/icon/header-icons/survey.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption text-center">SURVEY</figcaption>
+        </figure>
+      </a>
+    </div>
+    <div class="col-xs-5 col-sm-6 col-md-2">
+      <a href="http://genjour.com/magazine.php">
+        <figure class="figure">
+          <img src="img/icon/header-icons/magazine.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption text-center">MAGAZiNE</figcaption>
+        </figure>
+      </a>
+    </div>
+    <div class="col-xs-5 col-sm-6 col-md-2">
+      <a href="http://genjour.com/genjor-tv.php">
+        <figure class="figure">
+          <img src="img/icon/header-icons/tv.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption text-center">GENJOUR TV</figcaption>
+        </figure>
+      </a>
     </div>
 
-  </div>
 
-</dvi>
+  </div>
+  <div class="row mb-5">
+    <div class="col">
+       <blockquote class="blockquote text-right">
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="footer BottomFooter">
+  <div class="container-fluid">
+    <div class="d-flex justify-content-end" style="color: white">
+      <div class="mr-auto p-2">Genjour Media Pvt. Ltd. © 2017 | All rights reserved</div>
+      <div class="p-2"><a href="">Privacy Policy Terms</a> &amp; <a href=""> Conditions</a>
+      </div>
+      </div>
+  </div>
+</div>
+
+
 
 </body>
 </html>

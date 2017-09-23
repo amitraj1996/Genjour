@@ -1,14 +1,27 @@
    </head>
    <body>
-       <div class="head">
-          <div class="logo">
-            <img src="img/svg/logo.svg">
+       <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#"><img src="img/svg/logo.svg"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                      <li class="nav-item ">
+                        <a class="nav-link" href="http://genjour.com/journal.php"><img src="img/icon/header-icons/journal-hover.svg" style="height: 40px"> </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="http://genjour.com/interview.php"><img src="img/icon/header-icons/interview-hover.svg" style="height: 40px"></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="http://genjour.com/survey.php"><img src="img/icon/header-icons/survey-hover.svg" style="height: 40px"></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="http://genjour.com/magazine.php"><img src="img/icon/header-icons/magazine-hover.svg" style="height: 40px"></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="http://genjour.com/genjour-tv.php"><img src="img/icon/header-icons/tv-hover.svg" style="height: 40px"></a>
+                      </li>
+                  </ul>
           </div>
-          <div class="main-nav">         
-              <a href="journal" alt="Journal" data-toggle="tooltip" data-placement="bottom" title="Journal"><img src="img/svg/nav-icons/journal-white.svg"></a>
-               <a href="#" alt="Interview" data-toggle="tooltip" data-placement="bottom" title="Interview"><img src="img/svg/nav-icons/mic-white.svg"></a>
-              <a href="#" alt="Survey" data-toggle="tooltip" data-placement="bottom" title="Survey"><img src="img/svg/nav-icons/survey-white.svg"></a>
-              <a href="#" alt="Magazine" data-toggle="tooltip" data-placement="bottom" title="Magazine!"><img src="img/svg/nav-icons/magzine-white.svg"></a>
-              <a href="#" alt="Tv" data-toggle="tooltip" data-placement="bottom" title="Genjour Tv"><img src="img/svg/nav-icons/tv-white.svg"></a>       
-          </div>
-      </div>
+        </nav>

@@ -27,7 +27,7 @@ include 'header.php';
   <div class="card">
     <div class="card-body">
       <div class="card-img">
-      <button type="button" class="bt btn btn-dark float-right">Category</button>
+      <a href=""><button type="button" class="bt btn btn-dark float-right">All Interviews</button></a>
         <p class="display-4">Interview Heading heading 1 top of the content so placed here </p>
         <hr>
           <img class="rounded-circle" src="img/svg/64x64.svg" alt="Profile photo">

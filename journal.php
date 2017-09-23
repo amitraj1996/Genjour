@@ -1,11 +1,12 @@
-<?php
+	<?php
 
 	include('routes.php');
 	include('header.php');
 	include('category-header.php');
 	include('config/connect.php');
 
-
+	
+	
 	// TOP 4 articles query
   	$top4 = "SELECT * FROM journals ORDER BY post_counter DESC LIMIT 4;";
   	$top4_sql = $conn->query($top4);
@@ -60,78 +61,99 @@
 
 
 ?>
+
+<div class="container">
     <!-- Main section -->
+<p class="lead display-4 mt-5">
+	TOP JOURNALS
+</p>
+<hr>
+<div class="mt-4 row">
+		<div class="card-deck">
 
+		  <div class="card">
+		    <img class="card-img-top" src="<?php echo $s1['img_url']?>" alt="Card image cap" >
+		    <div class="card-body">
+		      <h4 class="card-title"> <a href="post.php?post_id=<?php echo $s1['post_id']; ?>"> <?php echo $a['post_title']; ?></a></h4>
+		      <p class="card-text">
+		      	
+		      	<?php
+		      		$body = $s1['post_content'];
+		      		echo substr($body, 0,80)."...";
+		      	?>
 
+		      </p>
+		    </div>
+		    <div class="card-footer">
+		      <small class="text-muted">Last updated 3 mins ago</small>
+		    </div>
+	  	  </div>
+
+	  	  <div class="card">
+		    <img class="card-img-top" src="<?php echo $s2['img_url']?>" alt="Card image cap" >
+		    <div class="card-body">
+		      <h4 class="card-title"> <a href="post.php?post_id=<?php echo $s2['post_id']; ?>"> <?php echo $s2['post_title']; ?></a></h4>
+		      <p class="card-text">
+		      	
+		      	<?php
+		      		$body = $s2['post_content'];
+		      		echo substr($body, 0,80)."...";
+		      	?>
+
+		      </p>
+		    </div>
+		    <div class="card-footer">
+		      <small class="text-muted">Last updated 3 mins ago</small>
+		    </div>
+	  	  </div>
+
+	  	  <div class="card">
+		    <img class="card-img-top" src="<?php echo $s3['img_url']?>" alt="Card image cap" >
+		    <div class="card-body">
+		      <h4 class="card-title"> <a href="post.php?post_id=<?php echo $s3['post_id']; ?>"> <?php echo $s3['post_title']; ?></a></h4>
+		      <p class="card-text">
+		      	
+		      	<?php
+		      		$body = $c['post_content'];
+		      		echo substr($body, 0,80)."...";
+		      	?>
+
+		      </p>
+		    </div>
+		    <div class="card-footer">
+		      <small class="text-muted">Last updated 3 mins ago</small>
+		    </div>
+	  	  </div>
+
+	  	  <div class="card">
+		    <img class="card-img-top" src="<?php echo $s4['img_url']?>" alt="Card image cap" >
+		    <div class="card-body">
+		      <h4 class="card-title"> <a href="post.php?post_id=<?php echo $s4['post_id']; ?>"> <?php echo $s4['post_title']; ?></a></h4>
+		      <p class="card-text">
+		      	
+		      	<?php
+		      		$body = $s4['post_content'];
+		      		echo substr($body, 0,80)."...";
+		      	?>
+
+		      </p>
+		    </div>
+		    <div class="card-footer">
+		      <small class="text-muted">Last updated 3 mins ago</small>
+		    </div>
+	  	  </div>
+
+		</div>
+	</div>
+
+	
 
 
     
 	<!-- END OF 4 col top post -->
-	<!-- Slider -->
 
-	<div class="mt-0">
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-	  <ol class="carousel-indicators">
-	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-	    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-	    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-	  </ol>
-	  <div class="carousel-inner">
 
-	    <div class="carousel-item active">
-	      <img class="d-block w-100" src="img/slider/slider11.png"  alt="First slide">
-	        <div class="carousel-caption d-none d-md-block">
-			    <h3><a href=""post.php?post_id=<?php echo $s1['post_id']; ?>"><?php echo $s1['post_title']?></a></h3>
-			    <p><?php
-		      		$body = $s1['post_content'];
-		      		echo substr($body, 0,35)."...";
-		      	?></p>
-			</div>
-	    </div>
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="img/slider/slider11.png" alt="Second slide">
-	      <div class="carousel-caption d-none d-md-block">
-			    <h3><a href=""post.php?post_id=<?php echo $s2['post_id']; ?>"><?php echo $s2['post_title']?></a></h3>
-			    <p><?php
-		      		$body = $s2['post_content'];
-		      		echo substr($body, 0,30)."...";
-		      	?></p>
-			</div>
-	    </div>
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="img/slider/slider11.png" alt="Third slide">
-	      <div class="carousel-caption d-none d-md-block">
-			    <h3><a href=""post.php?post_id=<?php echo $s3['post_id']; ?>"><?php echo $s3['post_title']?></a></h3>
-			    <p><?php
-		      		$body = $s3['post_content'];
-		      		echo substr($body, 0,35)."...";
-		      	?></p>
-			</div>
-	    </div>
-	    <div class="carousel-item ">
-	      <img class="d-block w-100" src="img/slider/slider11.png" alt="First slide">
-	      <div class="carousel-caption d-none d-md-block">
-			    <h3><a href=""post.php?post_id=<?php echo $s4['post_id']; ?>"><?php echo $s4['post_title']?></a></h3>
-			    <p><?php
-		      		$body = $s4['post_content'];
-		      		echo substr($body, 0,35)."...";
-		      	?></p>
-			</div>
-	    </div>
-	  </div>
-	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	  </a>
-	</div>
-	</div>
 
-<div class="container">
 <!-- Four col cards -->
 	<div class="mt-5 row">
 		<div class="card-deck">

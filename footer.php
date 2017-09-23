@@ -27,14 +27,6 @@
           </div>
                     <div class="col-md-2 col-xs-2">
             <h5>Follow Us</h5>
-
-                <ul class="nav justify-content-end">
-                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-facebook fa-lg"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-google-plus fa-lg"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-instagram fa-lg"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-twitter fa-lg"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-pinterest-p fa-lg"></i></a></li>
-                </ul>
             <ul class="social-footer">
               <li><i class="fa fa-facebook " aria-hidden="true"></i></li>
               <li><i class="fa fa-google-plus  " aria-hidden="true"></i></li>
@@ -57,34 +49,16 @@
  
 
 
-<div class="footer-bottom">
-
-  <div class="container">
-
-    <div class="row">
-
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
-          Genjour Media Pvt. Ltd. &copy; 2017 | All rights reserved
-
+ 
+<div class="BottomFooter">
+  <div class="container-fluid">
+    <div class="d-flex justify-content-end" style="color: white">
+      <div class="mr-auto p-2">Genjour Media Pvt. Ltd. © 2017 | All rights reserved</div>
+      <div class="p-2"><a href="">Privacy Policy Terms</a> &amp; <a href=""> Conditions</a>
       </div>
-
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
-        <div class="design">
-
-           <a href="#"><small>Privacy Policy</small> </a> 
-           <a target="_blank" href="#"><small>Terms &amp; Conditions</small></a>
-
-        </div>
-
       </div>
-
-    </div>
-
   </div>
-
-</dvi>
+</div>
 
 </body>
 </html>

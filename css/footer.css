@@ -1,5 +1,5 @@
   section{
-    background-color: #190629;
+    background-color: #2b292b;
     color: white;
     padding: 15px;
     
@@ -20,16 +20,19 @@
     list-style-type: none;
    
   }
- .footer-bottom{
-  background-color: #0d0316;
-  color: white;
-  padding: 8px;
-}
 
-.design {
-    color: #fff;
-    line-height: 10px;
-    min-height: 30px;
-    padding: 7px 0;
-    text-align: right;
-}
+  body > section > div > div > div > ul > li > a,body > section > div > div > div > ul > li > a:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+
+body > div.BottomFooter{
+    background-color: #1b1b1b;
+    color: white;
+    
+  }
+ body > div.BottomFooter > div > div > div > a{
+    text-decoration: none;
+    color: #eee;
+  }

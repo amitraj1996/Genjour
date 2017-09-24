@@ -1,9 +1,9 @@
 <!-- including header and routes file -->
 <?php
-include 'routes.php';
-include 'header.php';
+include 'includes/routes.php';
+include 'includes/header.php';
 ?>
-
+<title>Genjour | Interview</title>
 
 <!-- end of header inclusion -->
 <!-- column no 1 -->
@@ -96,5 +96,5 @@ Sed augue ligula, laoreet ac velit maximus, pharetra viverra purus. Etiam tortor
 <!-- </div> -->
 <!-- including footer files -->
 <?php
-include 'footer.php';
+include 'includes/footer.php';
  ?>

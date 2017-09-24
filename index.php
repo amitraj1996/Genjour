@@ -1,9 +1,8 @@
-
 <html>
   <head>
  
     <title>Genjour - Genjour Media</title>
-
+    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
     <!-- Normalize HTML5 Reset -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -24,7 +23,7 @@
   
  
   .navbar{
-    background-color: #2b292b;
+    background-color: #586788;
   }
 
   body > div.container.wrapper > div.d-flex.justify-content-around > a > figure > img{
@@ -35,7 +34,7 @@
     font-size: 25px;
   }
  body > div.BottomFooter{
-    background-color: #2b292b;
+    background-color: #3c475f;
     
   }
  body > div.BottomFooter > div > div > div > a{
@@ -55,7 +54,7 @@
   <body>
 
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="#"><img src="img/svg/logo.svg"></a>
+  <a class="navbar-brand" href="http://genjour.com"><img src="img/logo.svg"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

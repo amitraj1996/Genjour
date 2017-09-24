@@ -1,9 +1,9 @@
 <?php
   include('config/connect.php');
-	include('routes.php');
+	include('includes/routes.php');
 
-  include('header.php');
-  include('category-header.php');
+  include('includes/header.php');
+  include('includes/category-header.php');
   $post_id = $_GET['post_id'];
   $counter = "UPDATE journals SET post_counter=post_counter+1 WHERE post_id=$post_id";
   $conn->query($counter);
@@ -131,6 +131,6 @@ echo'<meta name="description" content="'.$row['post_title'].'" />
 
 
 <?php
-	include('footer.php');
+	include('includes/footer.php');
 	//include('functions/counter.php')
 ?>

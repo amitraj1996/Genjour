@@ -1,8 +1,11 @@
+	
+
 	<?php
 
-	include('routes.php');
-	include('header.php');
-	include('category-header.php');
+	include('includes/routes.php');
+	include('includes/header.php');
+
+	include('includes/category-header.php');
 	include('config/connect.php');
 
 	
@@ -61,7 +64,7 @@
 
 
 ?>
-
+<title>Genjour | Journal</title>
 <div class="container">
     <!-- Main section -->
 <p class="lead display-4 mt-5">
@@ -74,7 +77,7 @@
 		  <div class="card">
 		    <img class="card-img-top" src="<?php echo $s1['img_url']?>" alt="Card image cap" >
 		    <div class="card-body">
-		      <h4 class="card-title"> <a href="post.php?post_id=<?php echo $s1['post_id']; ?>"> <?php echo $a['post_title']; ?></a></h4>
+		      <h4 class="card-title"> <a href="post.php?post_id=<?php echo $s1['post_id']; ?>"> <?php echo $s1['post_title']; ?></a></h4>
 		      <p class="card-text">
 		      	
 		      	<?php
@@ -585,5 +588,5 @@
 </html>
 
 <?php
-include('footer.php');
+include('includes/footer.php');
 ?>

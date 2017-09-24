@@ -7,8 +7,8 @@
 ?>
 <title>Genjour | Survey</title>
 <?php
-    require_once('routes.php');
-    require_once('header.php');
+    require_once('includes/routes.php');
+    require_once('includes/header.php');
 
 
     if (isset($_GET['logout'])) {
@@ -87,13 +87,13 @@
       <div class="modal-body ">
         <div class="row justify-content-center">
           <a href="<?php echo $LoginApi->getFacebookLoginUrl(); ?>">
-            <button  class="btn btn-primary btn-lg mb-4" name="facebook" type="button">Facebook button</button>
+            <button  class="btn btn-primary btn-lg mb-4" name="facebook" type="button"><i class="fa fa-facebook" aria-hidden="true"></i> Login with Facebook</button>
           </a>          
         </div>
 
         <div class="row justify-content-center">
          <a href="<?php echo $LoginApi->getGoogleLoginUrl(); ?>">
-            <button class="btn btn-danger btn-lg" name="google" type="button">Google button</button>
+            <button class="btn btn-danger btn-lg" name="google" type="button"><i class="fa fa-google-plus" aria-hidden="true"></i> Login with Google</button>
           </a>
           
         </div>
@@ -166,7 +166,7 @@
           </button>
         </div>
         <div class="col mt-4">
-          <img src="img/icon/evidence.svg" style="width: 80%; height: 80%;">
+          <img src="img/icon/evidence.svg" style="width: 80%; height: 25%;">
         </div>
         <div class="col mt-3">
           <div class="modal fade" id="against_marijauna" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -260,7 +260,7 @@
           </button>
         </div>
         <div class="col mt-4">
-          <img src="img/icon/medical-insurance.svg" style="width: 80%; height: 80%;">
+          <img src="img/icon/medical-insurance.svg" style="width: 80%; height: 25%;">
         </div>
         <div class="col mt-3">
           <div class="modal fade" id="against_q2" tabindex="-1" role="dialog" aria-labelledby="against_q2Label" aria-hidden="true">
@@ -361,7 +361,7 @@
           </button>
         </div>
         <div class="col mt-4">
-          <img src="img/icon/lecture.svg" style="width: 80%; height: 80%;">
+          <img src="img/icon/lecture.svg" style="width: 80%; height: 25%;">
         </div>
         <div class="col mt-3">
           <div class="modal fade" id="against_q3" tabindex="-1" role="dialog" aria-labelledby="against_q2Label" aria-hidden="true">
@@ -453,7 +453,7 @@
           </button>
         </div>
         <div class="col mt-4">
-          <img src="img/icon/gays.svg" style="width: 80%; height: 80%;">
+          <img src="img/icon/gays.svg" style="width: 80%; height: 25%;">
         </div>
         <div class="col mt-3">
           <div class="modal fade" id="against_q4" tabindex="-1" role="dialog" aria-labelledby="against_q4Label" aria-hidden="true">
@@ -544,7 +544,7 @@
           </button>
         </div>
         <div class="col mt-4">
-          <img src="img/icon/soldier.svg" style="width: 80%; height: 80%;">
+          <img src="img/icon/soldier.svg" style="width: 80%; height: 25%;">
         </div>
         <div class="col mt-3">
           <div class="modal fade" id="against_q5" tabindex="-1" role="dialog" aria-labelledby="against_q4Label" aria-hidden="true">
@@ -656,5 +656,5 @@ $(document).ready(function(){
 </script>
 </body>
 <?php
-  include('footer.php');
+  include('includes/footer.php');
 ?>

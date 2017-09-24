@@ -20,7 +20,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
             <a class="navbar-brand" href="journal.php">  
-                <img src="img/svg/nav-icons/journal.svg" width="35" height="35" alt=""> 
+                <img src="img/icon/header-icons/journal-hover.svg" width="50" height="50" alt=""> 
             </a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">

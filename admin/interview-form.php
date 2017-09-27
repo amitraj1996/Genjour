@@ -10,7 +10,7 @@
 
 </head>
 <form method="post">
-  
+
 
 <!-- ending the including of header and routes file -->
 <div class="mt-4 mb-4 container">
@@ -76,7 +76,10 @@
 </div>
 <input type="text" class="form-control mt-4" placeholder="Genjourist Name" aria-label="Genjourist Name" aria-describedby="basic-addon2">
 <input type="text" class="form-control mt-4" placeholder="Interview Content" aria-label="Background Image" aria-describedby="basic-addon2">
-<input type="text" class="form-control mt-4" placeholder="Metadata" aria-label="Metadata" aria-describedby="basic-addon2">
+<input type="text" class="form-control mt-4" placeholder="Content" aria-label="Metadata" aria-describedby="basic-addon2">
+<div class="form-group">
+  <textarea class="form-control mt-4" placeholder="Description"rows="5"  id="description"></textarea>
+</div>
 <button type="button" class="btn btn-primary mt-4">Submit</button>
     </div>
     <!-- start of next column -->
@@ -89,7 +92,7 @@
 </div>
 </form>
 <script>
-  
+
   $()
 
 </script>

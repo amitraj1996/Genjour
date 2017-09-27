@@ -1,8 +1,8 @@
 <?php
 
-	include('routes.php');
-	include('header.php');
-	include('category-header.php');
+	include('includes/routes.php');
+	include('includes/header.php');
+	include('includes/category-header.php');
 	include('config/connect.php');
 	$category = $_GET['category'];
 
@@ -131,5 +131,5 @@
 
     <?php
     // FOOTER 
-    	include('footer.php');
+    	include('includes/footer.php');
     ?>

@@ -18,7 +18,7 @@
   		$trending[]=$row;
   	}
 
-  	// variable assign for most viewed posts
+  	// variable assign for most viewed posts - convert them into slider
   	$s1=$trending[0];
   	$s2=$trending[1];
   	$s3=$trending[2];

@@ -9,6 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
+<form method="post">
+  
 
 <!-- ending the including of header and routes file -->
 <div class="mt-4 mb-4 container">
@@ -85,6 +87,12 @@
     </div>
   </div>
 </div>
+</form>
+<script>
+  
+  $()
+
+</script>
 <!-- starting to include the footer file -->
  <?php
  //include '../includes/footer.php';

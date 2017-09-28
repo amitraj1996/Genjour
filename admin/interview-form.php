@@ -22,22 +22,22 @@
 <div class="form-check form-check-inline mt-3 ">
   <h3 class="form-check-inline">Identity</h3>
   <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Anonymous
+    <input class="form-check-input" onclick="document.getElementById('fname').disabled=true;" onclick="document.getElementById(lname).disabled=true;" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Anonymous
   </label>
 </div>
 <div class="form-check form-check-inline">
   <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Person
+    <input class="form-check-input" onclick="document.getElementById('fname').disabled=false;" onclick="document.getElementById(lname).disabled=false;" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Person
   </label>
 </div>
 <!-- end identity checkbox -->
 <form>
   <div class="form-row mt-3">
     <div class="col">
-      <input type="text" class="form-control" placeholder="First name">
+      <input type="text" class="form-control" id="fname" placeholder="First name">
     </div>
     <div class="col">
-      <input type="text" class="form-control" placeholder="Last name">
+      <input type="text" class="form-control" id="lname" placeholder="Last name">
     </div>
   </div>
 </form>
@@ -67,8 +67,8 @@
   <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
 </div>
 <div class="input-group mt-4">
-  <input type="text" class="form-control" placeholder="Upload profile pic" aria-label="Upload Profile Pic" aria-describedby="basic-addon2">
-  <i class="fa fa-upload fa-2x" aria-hidden="true"></i>
+  <input type="text" class="form-control" placeholder="Upload profile pic" accept="image/*" aria-label="Upload Profile Pic" aria-describedby="basic-addon2">
+  <i class="fa fa-upload fa-2x"  aria-hidden="true"></i>
 </div>
 <div class="input-group mt-4">
   <input type="text" class="form-control" placeholder="Background image" aria-label="Background Image" aria-describedby="basic-addon2">

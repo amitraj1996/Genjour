@@ -6,7 +6,15 @@
       <!-- Normalize HTML5 Reset -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+    <!-- YOU FORGOT TO ADD JS SCRIPT -->
+    <!-- THATS WHY AGE GROUP WAS NOT WORKING -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 
 </head>
 <form method="post">
@@ -22,7 +30,7 @@
 <div class="form-check form-check-inline mt-3 ">
   <h3 class="form-check-inline">Identity</h3>
   <label class="form-check-label">
-    <input class="form-check-input" onclick="document.getElementById('fname').disabled=true;" onclick="document.getElementById('lname').disabled=true;" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Anonymous
+    <input class="form-check-input" onclick="document.getElementById('fname').disabled=true;" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Anonymous
   </label>
 </div>
 <div class="form-check form-check-inline">
@@ -34,10 +42,7 @@
 <form>
   <div class="form-row mt-3">
     <div class="col">
-      <input type="text" class="form-control" id="fname" placeholder="First name">
-    </div>
-    <div class="col">
-      <input type="text" class="form-control" id="lname" placeholder="Last name">
+      <input type="text" class="form-control" id="fname" placeholder="Full Name">
     </div>
   </div>
 </form>
@@ -54,13 +59,26 @@
   </label>
 </div>
 <!-- end of gender bar -->
-<div class="btn-group btn-group-lg mt-3" role="group" aria-label="...">
-  <h3>Age Group</h3>
-  <button type="button" class="btn btn-secondary">9-13</button>
-  <button type="button" class="btn btn-secondary">14-30</button>
-  <button type="button" class="btn btn-secondary">31-50</button>
-  <button type="button" class="btn btn-secondary">50+</button>
-</div>
+  <div class="row">
+    <h3>
+      Age Group : 
+    </h3>
+  </div>
+      <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="categories" value="Economics" id="option1" autocomplete="off" checked> 9-13 years
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="categories" value="Life" id="option2" autocomplete="off"> 14-30 years
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="categories" value="Society" id="option3" autocomplete="off"> 31-50 years
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="categories" value="Controversy" id="option4" autocomplete="off"> 50+ years
+          </label>
+      </div>
+
 <!-- end of age bar -->
 <div class="input-group mt-4">
   <input type="text" class="form-control" placeholder="Publishing Date" aria-label="Publishing Date" aria-describedby="basic-addon2">

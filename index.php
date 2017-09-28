@@ -3,19 +3,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Genjour | Generations' Journal</title>
   <?php
     include 'includes/routes.php';     
   ?>
 </head>
 <style type="text/css">
 
-   .navbar{
+   #header{
     background-color: #586788;
   }
 
    #navbarNav > ul > li > a > i,#navbarNav > ul > li > a > i:hover{
-    color: white;
+    color: black  ;
   }
   
   .col{
@@ -59,38 +59,19 @@
 <body>
 
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg" id="header">
   <a class="navbar-brand" href="http://genjour.com"><img src="img/logo.png" height="60"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-              <li class="nav-item ">
-                <a class="nav-link" href="https://www.facebook.com/Genjourmedia/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i> </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://twitter.com/GenjourMedia"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="http://www.instagram.com/genjour"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a class="nav-link" href="https://in.pinterest.com/genjour/pins/"><i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a class="nav-link" href="https://plus.google.com/u/0/105599905295491593572"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a>
-              </li>
-          </ul>
+
   </div>
 </nav>
 
 
   <div class="container">
-    <div class="my- 5">
-      <p class="display-4 text-center">
-        WHERE WOULD YOU LIKE TO HEAD ?
-      </p>
+    <div class="my-5">
     </div>
     <div class="row d-flex justify-content-around ">
       <div class="col-6 col-sm-2 mt-3">
@@ -159,9 +140,29 @@
 
 
   </div>
-  <div class="spacer">
-    
-  </div>
+
+
+  <ul class="nav justify-content-center my-4" >
+      <li class="nav-item ">
+        <a class="nav-link" href="https://www.facebook.com/Genjourmedia/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i> </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://twitter.com/GenjourMedia"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://www.instagram.com/genjour"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a class="nav-link" href="https://in.pinterest.com/genjour/pins/"><i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a class="nav-link" href="https://plus.google.com/u/0/105599905295491593572"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a>
+      </li>
+  </ul>
+
+
+
+
 <div class="footer BottomFooter mt-5">
   <div class="container-fluid">
     <div class="d-flex justify-content-end" style="color: white">

@@ -1,5 +1,12 @@
-  #header{
-    background-color: #586788;
+  nav{
+    background-color: #f9f9f9;
+  }
+
+     nav{
+    background-color: #f9f9f9;
+    -webkit-box-shadow: 0px 3px 7px -1px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 3px 7px -1px rgba(0,0,0,0.10);
+    box-shadow: 0px 3px 7px -1px rgba(0,0,0,0.10);
   }
 
   body > div.container.wrapper > div.d-flex.justify-content-around > a > figure > img{

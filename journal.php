@@ -29,7 +29,7 @@
   	$s3_id = $s3['post_id'];
   	$s4_id = $s4['post_id'];
 
-  	// 20 random post id
+  	// 20 random post id 
   	$random = "SELECT * FROM journals WHERE NOT post_id=$s1_id AND NOT post_id=$s2_id AND NOT post_id = $s3_id AND NOT $post_id = $s4_id ORDER BY RAND() LIMIT 22;";
   	$random_sql = $conn->query($random);
 
@@ -67,9 +67,11 @@
 <title>Genjour | Journal</title>
 <div class="container">
     <!-- Main section -->
-<p class="lead display-4 mt-5">
-	TOP JOURNALS
-</p>
+<h3 class="mt-4">
+	Genjour Trending
+</h3>
+
+
 <hr>
 <div class="mt-4 row">
 		<div class="card-deck">
@@ -87,8 +89,8 @@
 
 		      </p>
 		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
+		    <div class="card-footer text-right">
+		       <small class="text-muted"><?php echo "-Genjourist <i>".$s1['genjourist_name'] ."</i>";?></small>
 		    </div>
 	  	  </div>
 
@@ -105,8 +107,8 @@
 
 		      </p>
 		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
+		    <div class="card-footer text-right">
+		      <small class="text-muted"><?php echo "-Genjourist <i>".$s2['genjourist_name'] ."</i>";?></small>
 		    </div>
 	  	  </div>
 
@@ -117,14 +119,14 @@
 		      <p class="card-text">
 		      	
 		      	<?php
-		      		$body = $c['post_content'];
+		      		$body = $s3['post_content'];
 		      		echo substr($body, 0,80)."...";
 		      	?>
 
 		      </p>
 		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
+		    <div class="card-footer text-right">
+		       <small class="text-muted"><?php echo "-Genjourist <i>".$s3['genjourist_name'] ."</i>";?></small>
 		    </div>
 	  	  </div>
 
@@ -141,8 +143,8 @@
 
 		      </p>
 		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
+		    <div class="card-footer text-right">
+		       <small class="text-muted"><?php echo "-Genjourist <i>".$s4['genjourist_name'] ."</i>";?></small>
 		    </div>
 	  	  </div>
 
@@ -174,8 +176,8 @@
 
 		      </p>
 		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
+		    <div class="card-footer text-right">
+		       <small class="text-muted"><?php echo "-Genjourist <i>".$a['genjourist_name'] ."</i>";?></small>
 		    </div>
 	  	  </div>
 
@@ -192,8 +194,8 @@
 
 		      </p>
 		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
+		    <div class="card-footer text-right">
+		       <small class="text-muted"><?php echo "-Genjourist <i>".$b['genjourist_name'] ."</i>";?></small>
 		    </div>
 	  	  </div>
 
@@ -210,8 +212,8 @@
 
 		      </p>
 		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
+		    <div class="card-footer text-right">
+		       <small class="text-muted"><?php echo "-Genjourist <i>".$c['genjourist_name'] ."</i>";?></small>
 		    </div>
 	  	  </div>
 
@@ -228,8 +230,8 @@
 
 		      </p>
 		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
+		    <div class="card-footer text-right">
+		       <small class="text-muted"><?php echo "-Genjourist <i>".$d['genjourist_name'] ."</i>";?></small>
 		    </div>
 	  	  </div>
 
@@ -339,10 +341,11 @@
 				      	?>
 			  </p>
 		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
+		    <div class="card-footer text-right">
+		       <small class="text-muted"><?php echo "-Genjourist <i>".$i['genjourist_name'] ."</i>";?></small>
 		    </div>
-	  	  </div>  
+	  	  </div> 
+
 		  <div class=" card">
 		    <img class="card-img-top" src="<?php echo $k['img_url'];?>" alt="Card image cap">
 		    <div class="card-body">
@@ -354,10 +357,11 @@
 				?>
 		      </p>
 		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
+		    <div class="card-footer text-right">
+		       <small class="text-muted"><?php echo "-Genjourist <i>".$k['genjourist_name'] ."</i>";?></small>
 		    </div>
 		  </div>
+
 		    <div class="card">
 		    <img class="card-img-top" src="<?php echo $l['img_url'];?>" alt="Card image cap">
 		    <div class="card-body">
@@ -367,10 +371,11 @@
 		      		echo substr($body, 0,80)."...";
 				?></p>
 		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
+		    <div class="card-footer text-right">
+		       <small class="text-muted"><?php echo "-Genjourist <i>".$l['genjourist_name'] ."</i>";?></small>
 		    </div>
 		  </div>
+
 		  <div class="card">
 		    <img class="card-img-top" src="<?php echo $m['img_url'];?>" alt="Card image cap">
 		    <div class="card-body">
@@ -380,8 +385,8 @@
 		      		echo substr($body, 0,80)."...";
 				?></p>
 		    </div>
-		    <div class="card-footer">
-		      <small class="text-muted">Last updated 3 mins ago</small>
+		    <div class="card-footer text-right">
+		       <small class="text-muted"><?php echo "-Genjourist <i>".$m['genjourist_name'] ."</i>";?></small>
 		    </div>
 		  </div>
 		</div>

@@ -10,8 +10,12 @@
 </head>
 <style type="text/css">
 
-   #header{
-    background-color: #586788;
+
+   nav{
+    background-color: #f9f9f9;
+    -webkit-box-shadow: 0px 3px 7px -1px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 3px 7px -1px rgba(0,0,0,0.10);
+    box-shadow: 0px 3px 7px -1px rgba(0,0,0,0.10);
   }
 
    #navbarNav > ul > li > a > i,#navbarNav > ul > li > a > i:hover{
@@ -22,13 +26,17 @@
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-  transition: all 0.2s ease-in-out;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow:0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.2s ease-in-out;
   }
 
   .col::after{
      opacity: 0;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  -webkit-box-shadow :0 5px 15px rgba(0,0,0,0.3);
+  -moz-box-shadow:0 5px 15px rgba(0,0,0,0.3);
   transition: opacity 0.2s ease-in-out;
   }
 
@@ -52,22 +60,40 @@
         font-size:2em;
     }
 
+    .footer.BottomFooter{
+      font-size: 10px;
+    }
+
 }
 
 
 </style>
 <body>
-
-
-<nav class="navbar navbar-expand-lg" id="header">
-  <a class="navbar-brand" href="http://genjour.com"><img src="img/logo.png" height="60"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="http://genjour.com"><img src="img/logo-dark1.svg" height="60"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      
+      <a href="#" class="btn btn-outline-info my-2 my-sm-0" role="button" >Log In</a>
+    </form>
   </div>
 </nav>
+
 
 
   <div class="container">
@@ -135,7 +161,7 @@
       </blockquote>
       
       <div class="row justify-content-center">
-        <button type="button" class="btn btn-outline-dark btn-lg">Become a Genjourist</button>
+        <a href="#" role="button" class="btn btn-outline-dark btn-lg">Become a Genjourist</a>
       </div>
 
 
@@ -166,8 +192,8 @@
 <div class="footer BottomFooter mt-5">
   <div class="container-fluid">
     <div class="d-flex justify-content-end" style="color: white">
-      <div class="mr-auto p-2">Genjour Media Pvt. Ltd. © 2017 | All rights reserved</div>
-      <div class="p-2"><a href="">Privacy Policy Terms</a> &amp; <a href=""> Conditions</a>
+      <div class="mr-auto p-2 ">Genjour © 2017</div>
+      <div class="p-2 "><a href="">Know More</a>
       </div>
       </div>
   </div>

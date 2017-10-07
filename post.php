@@ -8,7 +8,7 @@
   $counter = "UPDATE journals SET post_counter=post_counter+1 WHERE post_id=$post_id";
   $conn->query($counter);
 
-  //
+  // 
   $query = "SELECT * from journals where post_id = $post_id";
   $journals =$conn->query($query);
 

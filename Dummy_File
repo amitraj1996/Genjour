@@ -10,12 +10,7 @@ include ('header.php');
   <span class="border-bottom-0">
   <div class="container">
   <div class="form-row">
-    <div class="form-group col-md-3">
-      <label for="inputEmail4" class="col-form-label">First Name</label>
-      <input type="First Name" class="form-control" id="inputEmail4" placeholder="First Name">
-    </div>
-    <div class="form-group col-md-3">
-      <label for="Last Name" class="col-form-label">Last Name </label>
+    <div class="form-group co">
       <input type="password" class="form-control" id="inputPasswod4" placeholder="Last Name">
     </div>
   </div>
@@ -24,9 +19,7 @@ include ('header.php');
     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
   </div>
   <div class="form-group">
-    <label for="inputAddress2" class="col-form-label">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
+    <label for="inputAddress2" class="col-fo">
   <div class="form-row ">
     <div class="form-group col-md-3">
       <label for="inputCity" class="col-form-label">City</label>
